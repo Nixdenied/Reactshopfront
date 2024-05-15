@@ -35,7 +35,7 @@ class App extends Component {
       header: 'ALL',
       categories: [],
     }
-    //https://hourly-compressions.000webhostapp.com/graphql
+
     const url = 'http://localhost:80/graphql'
 
     this.categoriesService = new Categories(url)
