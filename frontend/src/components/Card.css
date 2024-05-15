@@ -1,0 +1,97 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  width: auto;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.out-of-stock-overlay {
+  position: absolute;
+  inset: 0 0 20%;
+  background-color: rgb(128 128 128 / 80%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7vw;
+  z-index: 10;
+}
+
+.add-to-cart-btn {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
+  transition: opacity 0.3s ease;
+  z-index: 6;
+}
+
+.add-to-cart-btn:active {
+  background-color: #45a049;
+}
+
+.card:hover .add-to-cart-btn {
+  opacity: 1;
+}
+
+.card::before {
+  content: '';
+  position: relative;
+  inset: -5px;
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
+  transition: box-shadow 0.3s ease;
+
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  font-size: 0.75em;
+  font-family: Raleway, sans-serif;
+  object-fit: contain;
+}
+
+@media (width <= 768px) {
+  .card {
+    width: 340px;
+    height: 340px;
+
+  }
+
+  .card-content {
+    font-size: 1.0em;
+  }
+
+  .out-of-stock-overlay {
+    font-size: 1.3em
+  }
+}

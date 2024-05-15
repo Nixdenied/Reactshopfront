@@ -1,0 +1,6 @@
+/vendor/
+.env
+scandiweb.sql
+build.sh
+.vscode
+.htaccess

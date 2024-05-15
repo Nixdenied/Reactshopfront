@@ -1,0 +1,16 @@
+.header {
+    margin: auto;
+    max-width: 80%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: calc(10px + 2vw);
+    font-family: Raleway, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+@media (width <= 768px) {
+    .header {
+        font-size: 2rem
+    }
+}

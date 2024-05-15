@@ -1,0 +1,20 @@
+.card-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 80%;
+  margin: auto;
+  z-index: 1;
+}
+
+@media (width <= 768px) {
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    place-items: center;
+  }
+}
