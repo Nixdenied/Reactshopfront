@@ -32,12 +32,13 @@
     overflow: hidden auto;
     height: 100%;
     padding: 10px;
+    object-fit: contain;
 }
 
 .thumbnail {
-    height: 20%;
+    max-height: 300px; /* Ensure the height does not exceed 20% of the container */
+    max-width: 100%; /* Ensure the width does not exceed the container width */
     width: auto;
-    object-fit: contain;
     margin-bottom: 10px;
     cursor: pointer;
 }
