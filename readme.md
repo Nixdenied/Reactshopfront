@@ -1,9 +1,7 @@
-# Scandiweb Full Stack Developer Test
+# Full Stack Developer Test
 
 ## Description
-This is the Scandiweb full stack developer test.
-
-[Website Link](https://hourly-compressions.000webhostapp.com/)
+This project is a full-stack web application designed to demonstrate full-stack development skills. It consists of a backend built with PHP and a frontend developed using React.js.
 
 ## Installation
 
@@ -59,4 +57,4 @@ This is the Scandiweb full stack developer test.
 This will start the frontend development server and open your application in your default web browser.
 
 ## CORS Configuration
-CORS is controlled with Apache. Make sure your Apache configuration allows the necessary CORS headers for your application.
+CORS is controlled with Apache. Make sure your Apache configuration allows the necessary CORS headers.
